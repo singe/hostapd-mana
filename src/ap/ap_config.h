@@ -618,6 +618,7 @@ struct hostapd_config {
 	int mana_macacl;
 	char * mana_outfile;
 	char * mana_ssid_filter_file;
+	int mana_ssid_filter_type;
 	int mana_wpe;
 	char * mana_credout;
 	char * mana_wpaout;
@@ -625,6 +626,11 @@ struct hostapd_config {
 	int mana_eaptls;
 	int enable_sycophant;
 	char * sycophant_dir;
+        char * sycophant_state_file;
+        char * sycophant_challenge_file;
+        char * sycophant_response_file;
+        char * sycophant_id_file[2];
+
 	// MANA END
 
 	u16 beacon_int;
